@@ -10,7 +10,16 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			keyframes: {
+				blink: {
+				  '0%': { opacity: '1' },
+				  '50%': { opacity: '0' },
+				  '100%': { opacity: '1' },
+				}
+			  },		
+			
 			colors: {
+
 				"dark-layer-1": "rgb(40,40,40)",
 				"dark-layer-2": "rgb(26,26,26)",
 				"dark-label-2": "rgba(239, 241, 246, 0.75)",
@@ -29,6 +38,22 @@ module.exports = {
 				"dark-green-s": "rgb(44 187 93)",
 				"dark-blue-s": "rgb(10 132 255)",
 			},
+			backgroundImage: theme => ({
+				'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))',
+				'gradient-linear': 'linear-gradient(90deg, var(--tw-gradient-stops))',
+			  }),
+			  backgroundClip: {
+				'text': 'text',
+			  },
+			},
+			animation: {
+				blink: 'blink 1s infinite',
+			  },
+		},
+	variants: {
+		extend: {
+			backgroundImage: ['hover', 'focus'],
+			backgroundClip: ['hover', 'focus'],
 		},
 	},
 	plugins: [],

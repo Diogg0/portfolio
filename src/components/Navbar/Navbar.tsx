@@ -4,15 +4,19 @@ type NavbarProps = {
     
 };
 
+
+
 const Navbar:React.FC<NavbarProps> = () => {
     
     return <>
-        <nav className="bg-indigo-700 h-20 w-full flex items-center justify-between px-8 ">
-            <div className="text-lime-400 font-bold text-3xl">Ratnakirti</div>
-            <div className="flex items-center space-x-8 text-lime-400">
-                <div className= "hover:bg-lime-400 hover:text-indigo-700">Home</div>
-                <div className= "hover:bg-lime-400 hover:text-indigo-700">About</div>
-                <div className= "hover:bg-lime-400 hover:text-indigo-700">Contact</div>
+        <meta name="viewport" content="width=device-width, initial-scale=1 height=device-height" />
+
+        <nav className="bg-white h-20 w-full flex items-center justify-between px-8 fixed drop-shadow-2xl border border-slate-200">
+            <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-bold text-3xl">Ratnakirti Kamble</div>
+            <div className="flex items-center space-x-8">
+                <button className= "text-indigo-500 group relative py-2 px-4 transition-transform duration-300 ease-in transform translate-y-0 hover:translate-y-[-5px]">Home</button>
+                <button className= "text-purple-500 group relative py-2 px-4 transition-transform duration-300 ease-in transform translate-y-0 hover:translate-y-[-5px]">About</button>
+                <button className= "text-pink-500 group relative py-2 px-4 transition-transform duration-300 ease-in transform translate-y-0 hover:translate-y-[-5px]">Contact</button>
             </div>
         </nav>
     </>
