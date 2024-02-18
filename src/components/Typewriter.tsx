@@ -14,7 +14,7 @@ const Typewriter: React.FC<TypewriterProps> = ({ text, delay }) => {
   useEffect(() => {
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex] );
+        setCurrentText(prevText => prevText + text[currentIndex]);
         setCurrentIndex(prevIndex => prevIndex + 1);
       }, delay);
 
@@ -22,7 +22,13 @@ const Typewriter: React.FC<TypewriterProps> = ({ text, delay }) => {
     }
   }, [currentIndex, delay, text]);
 
-  return <span>{currentText + "|"}</span>;
+  return (
+    <span className="inline-block">
+      {currentText}
+      <span className="animate-pulse">|</span>
+    </span>
+  );
 };
+
 
 export default Typewriter;
