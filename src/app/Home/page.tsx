@@ -21,9 +21,11 @@ const index:React.FC<indexProps> = () => {
             <div className="relative box bg-white w-3/5 pt-20 flex items-center justify-center"> 
                 <Image src="/terminal.png" alt="terminal" width={600} height={600} />
                 <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-1xl font-sans"><Typewriter text="Welcome to my portfolio!" delay={50}/></span>
-                <span className="animate-blink absolute top-20 pt-16 text-white text-1xl font-sans">|</span>
+                
             </div>
         </div>
     </>
 }
 export default index;
+
+// <span className="animate-blink absolute top-20 pt-16 text-white text-1xl font-sans">|</span>
