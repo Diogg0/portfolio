@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar/Navbar';
 import Intro from '@/components/Intro/Intro';
 import Projects from '@/components/Projects/Projects';
+import Head from 'next/head';
 
 
 type indexProps = {
@@ -19,11 +20,14 @@ const index:React.FC<indexProps> = () => {
 
     
     return <>
-        
+        <Head>
+            <link rel="icon" href="/logo.png" />
+        </Head>
         <Navbar />
         <Intro />
         <Projects/>
-        <div className="box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 w-2/5 h-screen pt-20"></div>
+  
+        
         
     </>
 }
