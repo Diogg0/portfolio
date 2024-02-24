@@ -5,17 +5,15 @@ customer_cart = {}
 running = True
 
 while running:
-    print('Welcome to the grocery store!')
-    print('We have the following items in stock:')
+    print()
+    print('Welcome to the grocery store! \nWe have the following items in stock:')
     for item in grocery_stock:
         print(f'{item}: {grocery_stock[item]}')
 
-    print('What would you like to buy?')
-    item = input()
+    item = input('What would you like to buy?')
 
     if item in grocery_stock:
-        print('How many would you like to buy?')
-        quantity = int(input())
+        quantity = int(input('How many would you like to buy?'))
 
         if quantity <= grocery_stock[item]:
             grocery_stock[item] -= quantity
