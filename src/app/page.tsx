@@ -1,9 +1,8 @@
 import React from 'react';
 import Navbar from '@/components/Navbar/Navbar';
 import Intro from '@/components/Intro/Intro';
-import Projects from '@/components/Projects/Projects';
 import Head from 'next/head';
-import Test from '@/components/Test/Test';
+import Test from '@/components/Projects/Test';
 
 
 type indexProps = {
@@ -27,7 +26,6 @@ const index:React.FC<indexProps> = () => {
        
             <Navbar />
             <Intro />
-            <Projects/>
             <Test/>
             
   

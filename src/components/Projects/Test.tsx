@@ -157,7 +157,7 @@ const Projects:React.FC<ProjectsProps> = () => {
 
         <div className="flex items-center justify-between">
             {/** Left side of the screen */}
-            <div className="box bg-gradient-to-t from-pink-500 via-purple-500 to-indigo-500 w-2/5 h-screen pt-20">
+            <div className="box bg-black   w-2/5 h-screen pt-20">
                 <p ref={ref1} className={`text-white flex justify-left items-top font-bold text-4xl pt-20 pl-5 transition-transform-all ease-in duration-1000 ${isVisible1 ? "opacity 100" : "opacity-0 -translate-x-20"}`}>My Personal Projects</p>
             </div>
             
