@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import Intro from '@/components/Intro/Intro';
 import Projects from '@/components/Projects/Projects';
 import Head from 'next/head';
+import Test from '@/components/Test/Test';
 
 
 type indexProps = {
@@ -23,9 +24,12 @@ const index:React.FC<indexProps> = () => {
         <Head>
             <link rel="icon" href="/logo.png" />
         </Head>
-        <Navbar />
-        <Intro />
-        <Projects/>
+       
+            <Navbar />
+            <Intro />
+            <Projects/>
+            <Test/>
+            
   
         
         

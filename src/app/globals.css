@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #4b4b4b;
+    border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d8d7d7;
+    border-radius: 5px;
+}
+ 
+/* Handle on hover */

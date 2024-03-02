@@ -16,7 +16,10 @@ module.exports = {
 				  '50%': { opacity: '0' },
 				  '100%': { opacity: '1' },
 				}
-			  },		
+			  },	
+			  spacing:{
+				'34': '8.5rem',
+			  },
 			
 			colors: {
 
