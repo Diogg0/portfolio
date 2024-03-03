@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from '@/components/Navbar/Navbar';
 import Intro from '@/components/Intro/Intro';
 import Head from 'next/head';
-import Test from '@/components/Projects/Test';
-
+import Projects from '@/components/Projects/Projects';
+import About from '@/components/About/About';
 
 type indexProps = {
     
@@ -17,7 +17,6 @@ function HomePage() {
 
 const index:React.FC<indexProps> = () => {
 
-
     
     return <>
         <Head>
@@ -25,8 +24,9 @@ const index:React.FC<indexProps> = () => {
         </Head>
        
             <Navbar />
-            <Intro />
-            <Test/>
+            <Intro id="intro"/>
+            <Projects id="project"/>
+            <About id="about"/>
             
   
         

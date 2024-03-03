@@ -8,13 +8,13 @@
  
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #4b4b4b;
+    background: #fdfcfc;
     border-radius: 0px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #d8d7d7;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(237, 214, 242) 0%, rgb(51, 2, 143) 100%);
     border-radius: 5px;
 }
  

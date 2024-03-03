@@ -50,7 +50,7 @@ module.exports = {
 			  },
 			},
 			animation: {
-				blink: 'blink 1s infinite',
+				blink: 'blink 0.8s infinite',
 			  },
 		},
 	variants: {

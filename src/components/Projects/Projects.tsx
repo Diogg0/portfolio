@@ -10,6 +10,7 @@ var count2 = 1;
 // test
 
 type ProjectsProps = {
+  id: string;
     
 };
 
@@ -36,13 +37,14 @@ export function UseIsVisible(ref: RefObject<Element>): boolean {
     return isIntersecting;
 }
 
-const Projects:React.FC<ProjectsProps> = () => {
-
+const Projects:React.FC<ProjectsProps> = ({id}) => {
+    
+    
     const ref1 = useRef<HTMLDivElement>(null);
     const isVisible1 = UseIsVisible(ref1);
 
     /** Colour cycle */
-    var colors = [' bg-violet-200', ' bg-pink-200', ' bg-indigo-200'];
+    var colors = [' bg-violet-300', ' bg-pink-300', ' bg-indigo-300'];
     
     const [isActive, setIsActive] = useState(false);
     const [hidden1, setHidden1] = useState(' opacity-0 h-2 w-0');
@@ -53,6 +55,7 @@ const Projects:React.FC<ProjectsProps> = () => {
 
     // Handles movement of project titles upwards
     const handleClickUp = () => {
+      
       setIsActive(true);
       // Start of animation for hidden button
 
@@ -155,9 +158,9 @@ const Projects:React.FC<ProjectsProps> = () => {
     return (<>
         
 
-        <div className="flex items-center justify-between">
+        <div id={id} className="flex items-center justify-between">
             {/** Left side of the screen */}
-            <div className="box bg-black   w-2/5 h-screen pt-20">
+            <div className="box box bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 w-2/5 h-screen pt-20">
                 <p ref={ref1} className={`text-white flex justify-left items-top font-bold text-4xl pt-20 pl-5 transition-transform-all ease-in duration-1000 ${isVisible1 ? "opacity 100" : "opacity-0 -translate-x-20"}`}>My Personal Projects</p>
             </div>
             

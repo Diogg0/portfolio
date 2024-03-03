@@ -25,7 +25,6 @@ const Typewriter: React.FC<TypewriterProps> = ({ text, delay }) => {
   return (
     <span className="inline-block">
       {currentText}
-      <span className="animate-pulse">|</span>
     </span>
   );
 };
